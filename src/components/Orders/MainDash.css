@@ -1,0 +1,140 @@
+/* Main container adjustments */
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  padding: 16px; /* Add some padding */
+}
+
+/* Action buttons adjustments */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 10px; /* Adjust position */
+  bottom: 50px; /* Adjust position */
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+.export-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Add gap for better spacing */
+}
+
+.export-attribute-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.export-attribute-title {
+  font-weight: 500;
+  width: 20%;
+}
+
+.custom-modal .ant-modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 80vh;
+  padding: 16px;
+}
+
+.footer-modal-button {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .MainDash {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MainDash {
+    align-items: center;
+  }
+
+  .export-attribute-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .export-button-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-buttons,
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container {
+    padding: 8px; /* Adjust padding for small screens */
+  }
+
+  .footer-modal-button {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .custom-modal .ant-modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+
+/* Disable text selection */
+.no-select .ant-table-thead th {
+  user-select: none;
+}
+
+.no-select-link {
+  user-select: none;
+}
+
+.no-select {
+  user-select: none;
+}
+
+/* Form and input elements styling */
+input,
+.ant-select-selector,
+.ant-picker,
+textarea,
+p {
+  width: 100%;
+}
+
+/* Additional styling for buttons to enhance UX */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b82f6; /* Add hover effect for better UX */
+}
+
+/* StaffExportTable */
+.staff-button-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 30%;
+}
